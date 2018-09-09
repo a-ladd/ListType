@@ -29,7 +29,7 @@
 # include "Utilities.cpp"
 
 // ------------------------------------ Defines -----------------------------------
-# define LISTTYPE_DIAGNOSTIC_LEVEL 7
+# define LISTTYPE_DIAGNOSTIC_LEVEL 6
 # define LISTTYPE_CLASS
 
 // ------------------------------ Diagnostic Includes -----------------------------
@@ -325,6 +325,22 @@ bool ListType <InfoType> ::Append(InfoType NewInfo) {
 //////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////
 
+template <class InfoType>
+void ListType <InfoType> ::RandomAppend(long NoToAppend, long Low, long High) {
+	if (ActNo + NoToAppend >= Max) {
+		while (ActNo <= Max) {
+				Info[ActNo] = RandNo(Low, High)
+				ActNo++
+		}
+	}
+	else {
+		for (int i = 0; i <= NoToAppend; i++) {
+				ActNo++;
+				Info[ActNo] = RandNo(Low, High);
+		}
+	}
+}
+
 
 # pragma endregion
 
@@ -343,6 +359,21 @@ bool ListType <InfoType> ::Append(InfoType NewInfo) {
 //  Date.......: xx/xx/xxxx              Compiler....: Visual Studio 2015 C++   //
 //////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////
+
+template <class InfoType>
+void ListType <InfoType> ::BubbleSort() {
+	for (int a = 1; a < Info.length - 1; a++) {
+		for (int b = 1; b < Info.length - 1 - a; b++) {
+			if (Info[b] > Info[b + 1]) {
+				InfoType temp = Info[b];
+				Info[b] = Info[b + 1];
+				Info[b + 1] = temp;
+			}
+		}
+	}
+}
+
+
 
 # pragma endregion
 
@@ -364,6 +395,24 @@ bool ListType <InfoType> ::Append(InfoType NewInfo) {
 //////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////
 
+template <class InfoType>
+void ListType <InfoType> ::InsertionSort() {
+	int i, key, j;
+	for (i = 1; i < Info.length - 1; i++)
+	{
+		key = Info[i];
+		j = i - 1;
+
+		while (j >= 0 && Info[j] > key)
+		{
+			Info[j + 1] = Info[j];
+			j = j - 1;
+		}
+		Info[j + 1] = key;
+	}
+}
+
+
 # pragma endregion
 
 # pragma region PART_DIAGNOSTIC_LEVEL_11___Selection_Sort //===============================================================================
@@ -381,6 +430,27 @@ bool ListType <InfoType> ::Append(InfoType NewInfo) {
 //  Date.......: xx/xx/xxxx              Compiler....: Visual Studio 2015 C++   //
 //////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////
+
+template <class InfoType>
+void ListType <InfoType> ::SelectionSort() {
+	int i, j, min;
+
+	
+	for (i = 0; i < Info.length - 1; i++)
+	{
+	
+		min = i;
+		for (j = i + 1; j < Info.length - 1; j++)
+			if (Info[j] < Info[min])
+				min = j;
+			
+			
+		InfoType temp = &Info[min];
+		&Info[min] = &Info[i];
+		&Info[i] = temp;
+
+	}
+}
 
 # pragma endregion
 
