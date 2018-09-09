@@ -1,38 +1,6 @@
-﻿  Athlete.cpp
-  Auto.cpp
-  Book.cpp
-  Client.cpp
-  Integer.cpp
-  ListType.cpp
-  Main.cpp
-  Part.cpp
-  Student.cpp
-  Utilities.cpp
+﻿  ListType.cpp
   Generating Code...
-Main.obj : error LNK2005: "void __cdecl ClearScreen(void)" (?ClearScreen@@YAXXZ) already defined in ListType.obj
-Main.obj : error LNK2005: "void __cdecl CompressMultipleBlanks(char * const)" (?CompressMultipleBlanks@@YAXQAD@Z) already defined in ListType.obj
-Main.obj : error LNK2005: "long __cdecl FileLength(struct _iobuf *,long)" (?FileLength@@YAJPAU_iobuf@@J@Z) already defined in ListType.obj
-Main.obj : error LNK2005: "long __cdecl FileLength(char * const,long)" (?FileLength@@YAJQADJ@Z) already defined in ListType.obj
-Main.obj : error LNK2005: "void __cdecl HitCarriageReturnToContinue(void)" (?HitCarriageReturnToContinue@@YAXXZ) already defined in ListType.obj
-Main.obj : error LNK2005: "double __cdecl LOG2(double)" (?LOG2@@YANN@Z) already defined in ListType.obj
-Main.obj : error LNK2005: "void __cdecl PrepareMatchString(char * const)" (?PrepareMatchString@@YAXQAD@Z) already defined in ListType.obj
-Main.obj : error LNK2005: "long __cdecl RandNo(long,long)" (?RandNo@@YAJJJ@Z) already defined in ListType.obj
-Main.obj : error LNK2005: "void __cdecl StripLeadingBlanks(char * const)" (?StripLeadingBlanks@@YAXQAD@Z) already defined in ListType.obj
-Main.obj : error LNK2005: "void __cdecl StripTrailingBlanks(char * const)" (?StripTrailingBlanks@@YAXQAD@Z) already defined in ListType.obj
-Main.obj : error LNK2005: "void __cdecl ToLowerCase(char * const)" (?ToLowerCase@@YAXQAD@Z) already defined in ListType.obj
-Main.obj : error LNK2005: "void __cdecl ToUpperCase(char * const)" (?ToUpperCase@@YAXQAD@Z) already defined in ListType.obj
-Main.obj : error LNK2005: "void __cdecl flush_stream(struct _iobuf *)" (?flush_stream@@YAXPAU_iobuf@@@Z) already defined in ListType.obj
-Utilities.obj : error LNK2005: "void __cdecl ClearScreen(void)" (?ClearScreen@@YAXXZ) already defined in ListType.obj
-Utilities.obj : error LNK2005: "void __cdecl CompressMultipleBlanks(char * const)" (?CompressMultipleBlanks@@YAXQAD@Z) already defined in ListType.obj
-Utilities.obj : error LNK2005: "long __cdecl FileLength(struct _iobuf *,long)" (?FileLength@@YAJPAU_iobuf@@J@Z) already defined in ListType.obj
-Utilities.obj : error LNK2005: "long __cdecl FileLength(char * const,long)" (?FileLength@@YAJQADJ@Z) already defined in ListType.obj
-Utilities.obj : error LNK2005: "void __cdecl HitCarriageReturnToContinue(void)" (?HitCarriageReturnToContinue@@YAXXZ) already defined in ListType.obj
-Utilities.obj : error LNK2005: "double __cdecl LOG2(double)" (?LOG2@@YANN@Z) already defined in ListType.obj
-Utilities.obj : error LNK2005: "void __cdecl PrepareMatchString(char * const)" (?PrepareMatchString@@YAXQAD@Z) already defined in ListType.obj
-Utilities.obj : error LNK2005: "long __cdecl RandNo(long,long)" (?RandNo@@YAJJJ@Z) already defined in ListType.obj
-Utilities.obj : error LNK2005: "void __cdecl StripLeadingBlanks(char * const)" (?StripLeadingBlanks@@YAXQAD@Z) already defined in ListType.obj
-Utilities.obj : error LNK2005: "void __cdecl StripTrailingBlanks(char * const)" (?StripTrailingBlanks@@YAXQAD@Z) already defined in ListType.obj
-Utilities.obj : error LNK2005: "void __cdecl ToLowerCase(char * const)" (?ToLowerCase@@YAXQAD@Z) already defined in ListType.obj
-Utilities.obj : error LNK2005: "void __cdecl ToUpperCase(char * const)" (?ToUpperCase@@YAXQAD@Z) already defined in ListType.obj
-Utilities.obj : error LNK2005: "void __cdecl flush_stream(struct _iobuf *)" (?flush_stream@@YAXPAU_iobuf@@@Z) already defined in ListType.obj
-C:\Users\Andrew\Desktop\git\ListType\Debug\Project.exe : fatal error LNK1169: one or more multiply defined symbols found
+  Compiling...
+  Main.cpp
+  Generating Code...
+  Project.vcxproj -> C:\Users\Andrew\Documents\git\AndrewL-ListType\Debug\Project.exe
