@@ -1,6 +1,13 @@
 ﻿  ListType.cpp
-  Generating Code...
-  Compiling...
+c:\users\andrew\desktop\git\listtype\listtype.cpp(493): error C2039: 'HicksRandomAppend': is not a member of 'ListType<Integer>'
+  c:\users\andrew\desktop\git\listtype\listtype.cpp(463): note: see declaration of 'ListType<Integer>'
+c:\users\andrew\desktop\git\listtype\listtype.cpp(517): error C2039: 'HicksRandomAppend': is not a member of 'ListType<Integer>'
+  c:\users\andrew\desktop\git\listtype\listtype.cpp(463): note: see declaration of 'ListType<Integer>'
+c:\users\andrew\desktop\git\listtype\listtype.cpp(522): error C2039: 'HicksRandomAppend': is not a member of 'ListType<Integer>'
+  c:\users\andrew\desktop\git\listtype\listtype.cpp(463): note: see declaration of 'ListType<Integer>'
+c:\users\andrew\desktop\git\listtype\listtype.cpp(567): error C2039: 'HicksRandomAppend': is not a member of 'ListType<Integer>'
+  c:\users\andrew\desktop\git\listtype\listtype.cpp(463): note: see declaration of 'ListType<Integer>'
+c:\users\andrew\desktop\git\listtype\listtype.cpp(572): error C2039: 'HicksRandomAppend': is not a member of 'ListType<Integer>'
+  c:\users\andrew\desktop\git\listtype\listtype.cpp(463): note: see declaration of 'ListType<Integer>'
   Main.cpp
   Generating Code...
-  Project.vcxproj -> C:\Users\Andrew\Documents\git\AndrewL-ListType\Debug\Project.exe

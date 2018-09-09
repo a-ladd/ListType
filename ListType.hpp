@@ -244,7 +244,11 @@ void ListType <InfoType> ::Display(char Message[])
 
 template <class InfoType>
 bool ListType <InfoType> ::Empty() {
-	if(ActNo == 0) true else false
+	int counter = 0;
+	for (int i = 1; i < Max - 1; i++) {
+		if (&Info[i] != NULL) counter++;
+	}
+	if (counter = 0) return true; else return false;
 }
 
 
@@ -265,7 +269,7 @@ bool ListType <InfoType> ::Empty() {
 
 template <class InfoType>
 bool ListType <InfoType> ::Full() {
-	if (ActNo == Max) true else false
+	if (ActNo == Max) return true; else return false;
 }
 
 # pragma endregion
@@ -297,9 +301,10 @@ bool ListType <InfoType> ::Full() {
 template <class InfoType>
 bool ListType <InfoType> ::Append(InfoType NewInfo) {
 	if (Full()) {
-		return UNSUCCESSFUL;
-	}else Info[ActNo + 1] = NewInfo
-		return SUCCESSFUL;
+		return false;
+	}
+	else Info[ActNo + 1] = NewInfo;
+		return true;
 }
 
 # pragma endregion
@@ -329,8 +334,8 @@ template <class InfoType>
 void ListType <InfoType> ::RandomAppend(long NoToAppend, long Low, long High) {
 	if (ActNo + NoToAppend >= Max) {
 		while (ActNo <= Max) {
-				Info[ActNo] = RandNo(Low, High)
-				ActNo++
+			Info[ActNo] = RandNo(Low, High);
+				ActNo++;
 		}
 	}
 	else {
@@ -362,8 +367,8 @@ void ListType <InfoType> ::RandomAppend(long NoToAppend, long Low, long High) {
 
 template <class InfoType>
 void ListType <InfoType> ::BubbleSort() {
-	for (int a = 1; a < Info.length - 1; a++) {
-		for (int b = 1; b < Info.length - 1 - a; b++) {
+	for (int a = 1; a < Max - 1; a++) {
+		for (int b = 1; b < Max - 1 - a; b++) {
 			if (Info[b] > Info[b + 1]) {
 				InfoType temp = Info[b];
 				Info[b] = Info[b + 1];
@@ -397,8 +402,9 @@ void ListType <InfoType> ::BubbleSort() {
 
 template <class InfoType>
 void ListType <InfoType> ::InsertionSort() {
-	int i, key, j;
-	for (i = 1; i < Info.length - 1; i++)
+	int i, j;
+	InfoType key;
+	for (i = 1; i < Max - 1; i++)
 	{
 		key = Info[i];
 		j = i - 1;
@@ -434,20 +440,20 @@ void ListType <InfoType> ::InsertionSort() {
 template <class InfoType>
 void ListType <InfoType> ::SelectionSort() {
 	int i, j, min;
-
+	InfoType Temp;
 	
-	for (i = 0; i < Info.length - 1; i++)
+	for (i = 0; i < Max - 1; i++)
 	{
 	
 		min = i;
-		for (j = i + 1; j < Info.length - 1; j++)
+		for (j = i + 1; j < Max - 1; j++)
 			if (Info[j] < Info[min])
 				min = j;
 			
-			
-		InfoType temp = &Info[min];
-		&Info[min] = &Info[i];
-		&Info[i] = temp;
+		Temp = Info[min];
+		Info[min] = Info[i];
+		Info[i] = Temp;
+		
 
 	}
 }

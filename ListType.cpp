@@ -238,364 +238,364 @@ void TestListType(void)
 # pragma endregion
 
 # pragma region LISTTYPE_DIAGNOSTIC_LEVEL_3___Append //====================================================================================
-	//if (LISTTYPE_DIAGNOSTIC_LEVEL <= 3)
-	//{
-	//	puts("\n\n");
-	//	puts("===================================================================");
-	//	puts("===================================================================");
-	//	puts("================          Testing Append          =================");
-	//	puts("================   LISTTYPE_DIAGNOSTIC_LEVEL = 3  =================");
-	//	puts("===================================================================");
-	//	puts("===================================================================\n");
+	if (LISTTYPE_DIAGNOSTIC_LEVEL <= 3)
+	{
+		puts("\n\n");
+		puts("===================================================================");
+		puts("===================================================================");
+		puts("================          Testing Append          =================");
+		puts("================   LISTTYPE_DIAGNOSTIC_LEVEL = 3  =================");
+		puts("===================================================================");
+		puts("===================================================================\n");
 
-	//	ListType <int>
-	//		IntNos,
-	//		Data(-3);
+		ListType <int>
+			IntNos,
+			Data(-3);
 
-	//ListType <char>
-	//	Chars(5);
+	ListType <char>
+		Chars(5);
 
-	//ListType <Student>
-	//	Class(4);
+	ListType <Student>
+		Class(4);
 
-	//Student
-	//	Jane("Jane Doe", 123, FEMALE),
-	//	John("John Doe", 234, MALE),
-	//	Sarah("Sarah Hicks", 345, FEMALE);
+	Student
+		Jane("Jane Doe", 123, FEMALE),
+		John("John Doe", 234, MALE),
+		Sarah("Sarah Hicks", 345, FEMALE);
 
 
-	//Class.Append(Sarah);
-	//Class.Display("Class ==> Sarah");
-	//Class.Append(John);
-	//Class.Display("Class ==> Sarah & John");
+	Class.Append(Sarah);
+	Class.Display("Class ==> Sarah");
+	Class.Append(John);
+	Class.Display("Class ==> Sarah & John");
 
-	//HitCarriageReturnToContinue();
-	//puts("\n------------------------------------------------------\n");
+	HitCarriageReturnToContinue();
+	puts("\n------------------------------------------------------\n");
 
-	//IntNos.Append(1);
-	//IntNos.Display("IntNos ==> 1");
-	//IntNos.Append(2);
-	//IntNos.Display("IntNos ==> 1 2");
+	IntNos.Append(1);
+	IntNos.Display("IntNos ==> 1");
+	IntNos.Append(2);
+	IntNos.Display("IntNos ==> 1 2");
 
-	//HitCarriageReturnToContinue();
-	//puts("\n------------------------------------------------------\n");
+	HitCarriageReturnToContinue();
+	puts("\n------------------------------------------------------\n");
 
-	//Chars.Append('B');
-	//Chars.Display("Chars ==> B");
-	//Chars.Append('D');
-	//Chars.Display("Chars ==> B D");
-	//if (Chars.Append('E'))
-	//	Chars.Display("Chars ==> B D E");
-	//else
-	//	puts("Unable to Append E --> List is Full");
-	//if (Chars.Append('F'))
-	//	Chars.Display("Chars ==> B D E F");
-	//else
-	//	puts("Unable to Append F --> List is Full");
-	//if (Chars.Append('G'))
-	//	Chars.Display("Chars ==> B D E F G");
-	//else
-	//	puts("Unable to Append G --> List is Full");
-	//if (Chars.Append('H'))
-	//	Chars.Display("Chars ==> B D E F G H");
-	//else
-	//	puts("Unable to Append H --> List is Full");
-	//if (Chars.Append('I'))
-	//	Chars.Display("Chars ==> B D E F G H I");
-	//else
-	//	puts("Unable to Append I --> List is Full");
-	//
-	//HitCarriageReturnToContinue();
-	//puts("\n------------------------------------------------------\n");
+	Chars.Append('B');
+	Chars.Display("Chars ==> B");
+	Chars.Append('D');
+	Chars.Display("Chars ==> B D");
+	if (Chars.Append('E'))
+		Chars.Display("Chars ==> B D E");
+	else
+		puts("Unable to Append E --> List is Full");
+	if (Chars.Append('F'))
+		Chars.Display("Chars ==> B D E F");
+	else
+		puts("Unable to Append F --> List is Full");
+	if (Chars.Append('G'))
+		Chars.Display("Chars ==> B D E F G");
+	else
+		puts("Unable to Append G --> List is Full");
+	if (Chars.Append('H'))
+		Chars.Display("Chars ==> B D E F G H");
+	else
+		puts("Unable to Append H --> List is Full");
+	if (Chars.Append('I'))
+		Chars.Display("Chars ==> B D E F G H I");
+	else
+		puts("Unable to Append I --> List is Full");
+	
+	HitCarriageReturnToContinue();
+	puts("\n------------------------------------------------------\n");
 
-	//for (int pos = 3; pos <= 15; pos++)
-	//	if (IntNos.Append(pos))
-	//		IntNos.Display();
-	//	else
-	//		puts("IntNos List Overflow Attempt");
+	for (int pos = 3; pos <= 15; pos++)
+		if (IntNos.Append(pos))
+			IntNos.Display();
+		else
+			puts("IntNos List Overflow Attempt");
 
-	//	HitCarriageReturnToContinue();
-	//}
+		HitCarriageReturnToContinue();
+	}
 # pragma endregion
 
 # pragma region LISTTYPE_DIAGNOSTIC_LEVEL_4___Empty //=====================================================================================
-	//if (LISTTYPE_DIAGNOSTIC_LEVEL <= 4)
-	//{
-	//	puts("\n\n");
-	//	puts("===================================================================");
-	//	puts("===================================================================");
-	//	puts("================          Testing Empty           =================");
-	//	puts("================   LISTTYPE_DIAGNOSTIC_LEVEL = 4  =================");
-	//	puts("===================================================================");
-	//	puts("===================================================================\n");
-	//	ListType <int>
-	//		IntNos(6);
+	if (LISTTYPE_DIAGNOSTIC_LEVEL <= 4)
+	{
+		puts("\n\n");
+		puts("===================================================================");
+		puts("===================================================================");
+		puts("================          Testing Empty           =================");
+		puts("================   LISTTYPE_DIAGNOSTIC_LEVEL = 4  =================");
+		puts("===================================================================");
+		puts("===================================================================\n");
+		ListType <int>
+			IntNos(6);
 
-	//	ListType <char>
-	//		Chars(3);
+		ListType <char>
+			Chars(3);
 
-	//	if (Chars.Empty())
-	//		puts("CORRECT");
-	//	else
-	//		puts("ERROR");
-	//	for (int pos = 1; pos <= 3; pos++)
-	//	{
-	//		Chars.Append(pos + 65);
-	//		if (Chars.Empty())
-	//			puts("ERROR");
-	//		else
-	//			puts("CORRECT");
-	//	}
-	//	Chars.Display();
-	//	HitCarriageReturnToContinue();
-	//	puts("\n------------------------------------------------------\n\n");
+		if (Chars.Empty())
+			puts("CORRECT");
+		else
+			puts("ERROR");
+		for (int pos = 1; pos <= 3; pos++)
+		{
+			Chars.Append(pos + 65);
+			if (Chars.Empty())
+				puts("ERROR");
+			else
+				puts("CORRECT");
+		}
+		Chars.Display();
+		HitCarriageReturnToContinue();
+		puts("\n------------------------------------------------------\n\n");
 
-	//	if (IntNos.Empty())
-	//		puts("CORRECT");
-	//	else
-	//		puts("ERROR");
-	//	for (int pos = 1; pos <= 6; pos++)
-	//	{
-	//		IntNos.Append(pos + 65);
-	//		if (IntNos.Empty())
-	//			puts("ERROR");
-	//		else
-	//			puts("CORRECT");
-	//	}
-	//	IntNos.Display();
-	//	HitCarriageReturnToContinue();
-	//}
+		if (IntNos.Empty())
+			puts("CORRECT");
+		else
+			puts("ERROR");
+		for (int pos = 1; pos <= 6; pos++)
+		{
+			IntNos.Append(pos + 65);
+			if (IntNos.Empty())
+				puts("ERROR");
+			else
+				puts("CORRECT");
+		}
+		IntNos.Display();
+		HitCarriageReturnToContinue();
+	}
 # pragma endregion
 	
 # pragma region LISTTYPE_DIAGNOSTIC_LEVEL_5___Full //======================================================================================
-	//if (LISTTYPE_DIAGNOSTIC_LEVEL <= 5)
-	//{
-	//	puts("\n\n");
-	//	puts("===================================================================");
-	//	puts("===================================================================");
-	//	puts("================          Testing Full            =================");
-	//	puts("================   LISTTYPE_DIAGNOSTIC_LEVEL = 5  =================");
-	//	puts("===================================================================");
-	//	puts("===================================================================\n");
+	if (LISTTYPE_DIAGNOSTIC_LEVEL <= 5)
+	{
+		puts("\n\n");
+		puts("===================================================================");
+		puts("===================================================================");
+		puts("================          Testing Full            =================");
+		puts("================   LISTTYPE_DIAGNOSTIC_LEVEL = 5  =================");
+		puts("===================================================================");
+		puts("===================================================================\n");
 
-	//	ListType <int>
-	//		IntNos(6);
+		ListType <int>
+			IntNos(6);
 
-	//	ListType <char>
-	//		Chars(3);
+		ListType <char>
+			Chars(3);
 
-	//	for (int pos = 1; pos <= 3; pos++)
-	//	{
-	//		if (Chars.Full())
-	//			puts("ERROR");
-	//		else
-	//			puts("CORRECT");
-	//		Chars.Append(pos + 65);
+		for (int pos = 1; pos <= 3; pos++)
+		{
+			if (Chars.Full())
+				puts("ERROR");
+			else
+				puts("CORRECT");
+			Chars.Append(pos + 65);
 
-	//	}
-	//	if (Chars.Full())
-	//		puts("CORRECT");
-	//	else
-	//		puts("ERROR");
+		}
+		if (Chars.Full())
+			puts("CORRECT");
+		else
+			puts("ERROR");
 
-	//	Chars.Display();
-	//	HitCarriageReturnToContinue();
-	//	puts("\n------------------------------------------------------\n");
+		Chars.Display();
+		HitCarriageReturnToContinue();
+		puts("\n------------------------------------------------------\n");
 
-	//	for (int pos = 1; pos <= 6; pos++)
-	//	{
-	//		if (IntNos.Full())
-	//			puts("ERROR");
-	//		else
-	//			puts("CORRECT");
-	//		IntNos.Append(pos + 65);
+		for (int pos = 1; pos <= 6; pos++)
+		{
+			if (IntNos.Full())
+				puts("ERROR");
+			else
+				puts("CORRECT");
+			IntNos.Append(pos + 65);
 
-	//	}
-	//	if (IntNos.Full())
-	//		puts("CORRECT");
-	//	else
-	//		puts("ERROR");
+		}
+		if (IntNos.Full())
+			puts("CORRECT");
+		else
+			puts("ERROR");
 
-	//	IntNos.Display();
-	//	HitCarriageReturnToContinue();
-	//}
+		IntNos.Display();
+		HitCarriageReturnToContinue();
+	}
 # pragma endregion
 
 # pragma region LISTTYPE_DIAGNOSTIC_LEVEL_6___Append-Part //===============================================================================
-	//if (LISTTYPE_DIAGNOSTIC_LEVEL <= 6)
-	//{
-	//	puts("\n\n");
-	//	puts("===================================================================");
-	//	puts("===================================================================");
-	//	puts("================         Testing Append Part      =================");
-	//	puts("================   LISTTYPE_DIAGNOSTIC_LEVEL = 6  =================");
-	//	puts("===================================================================");
-	//	puts("===================================================================\n");
+	if (LISTTYPE_DIAGNOSTIC_LEVEL <= 6)
+	{
+		puts("\n\n");
+		puts("===================================================================");
+		puts("===================================================================");
+		puts("================         Testing Append Part      =================");
+		puts("================   LISTTYPE_DIAGNOSTIC_LEVEL = 6  =================");
+		puts("===================================================================");
+		puts("===================================================================\n");
 
-	//	Part
-	//		Part1("Basketball",   123, 1,  5,   49.99),
-	//		Part2("Football",     345, 1,  2,   39.99),
-	//		Part3("Softball",     678, 1, 15,    4.99),
-	//		Part4("Dell Laptops", 123, 5, 10, 7999.99);
+		Part
+			Part1("Basketball",   123, 1,  5,   49.99),
+			Part2("Football",     345, 1,  2,   39.99),
+			Part3("Softball",     678, 1, 15,    4.99),
+			Part4("Dell Laptops", 123, 5, 10, 7999.99);
 
-	//	ListType<Part>
-	//		Inventory(4);
-	//		
-	//	Inventory.Append(Part1);
-	//	Inventory.Append(Part2);
-	//	Inventory.Append(Part3);
-	//	Inventory.Append(Part4);
-	//	Inventory.Display();
-	//}
+		ListType<Part>
+			Inventory(4);
+			
+		Inventory.Append(Part1);
+		Inventory.Append(Part2);
+		Inventory.Append(Part3);
+		Inventory.Append(Part4);
+		Inventory.Display();
+	}
 # pragma endregion
 
 # pragma region LISTTYPE_DIAGNOSTIC_LEVEL_7___RndomAppend //===============================================================================
-//if (LISTTYPE_DIAGNOSTIC_LEVEL <= 7)
-//{
-//	puts("\n\n");
-//	puts("===================================================================");
-//	puts("===================================================================");
-//	puts("================        Testing RandomAppend      =================");
-//	puts("================   LISTTYPE_DIAGNOSTIC_LEVEL = 7  =================");
-//	puts("===================================================================");
-//	puts("===================================================================\n");
-//	srand(2320);
-//	ListType <Integer>
-//		IntNos1(6),
-//		IntNos2(50);
-//
-//	IntNos1.Append(1);
-//	IntNos1.Append(2);
-//	IntNos1.Append(3);
-//	IntNos1.RandomAppend(15, 6, 7);
-//	IntNos1.Display();
-//
-//	IntNos2.RandomAppend(48, 1, 48);
-//	IntNos2.Display();
-//}
+if (LISTTYPE_DIAGNOSTIC_LEVEL <= 7)
+{
+	puts("\n\n");
+	puts("===================================================================");
+	puts("===================================================================");
+	puts("================        Testing RandomAppend      =================");
+	puts("================   LISTTYPE_DIAGNOSTIC_LEVEL = 7  =================");
+	puts("===================================================================");
+	puts("===================================================================\n");
+	srand(2320);
+	ListType <Integer>
+		IntNos1(6),
+		IntNos2(50);
+
+	IntNos1.Append(1);
+	IntNos1.Append(2);
+	IntNos1.Append(3);
+	IntNos1.RandomAppend(15, 6, 7);
+	IntNos1.Display();
+
+	IntNos2.RandomAppend(48, 1, 48);
+	IntNos2.Display();
+}
 # pragma endregion
 
 # pragma region LISTTYPE_DIAGNOSTIC_LEVEL_8___BubbleSort //================================================================================
-//if (LISTTYPE_DIAGNOSTIC_LEVEL <= 8)
-//{
-//	puts("\n\n");
-//	puts("===================================================================");
-//	puts("===================================================================");
-//	puts("================        Testing BubbleionSort     =================");
-//	puts("================   LISTTYPE_DIAGNOSTIC_LEVEL = 8  =================");
-//	puts("===================================================================");
-//	puts("===================================================================\n");
-//
-//	srand(2320);
-//	ListType <Integer>
-//		IntNos(500);
-//
-//	IntNos.HicksRandomAppend(500);
-//	IntNos.Display("========================= Unsorted ========================\n\n");
-//	HitCarriageReturnToContinue();
-//	IntNos.BubbleSort();
-//	IntNos.Display("========================== Sorted =========================\n\n");
-//}
+if (LISTTYPE_DIAGNOSTIC_LEVEL <= 8)
+{
+	puts("\n\n");
+	puts("===================================================================");
+	puts("===================================================================");
+	puts("================        Testing BubbleionSort     =================");
+	puts("================   LISTTYPE_DIAGNOSTIC_LEVEL = 8  =================");
+	puts("===================================================================");
+	puts("===================================================================\n");
+
+	srand(2320);
+	ListType <Integer>
+		IntNos(500);
+
+	IntNos.HicksRandomAppend(500);
+	IntNos.Display("========================= Unsorted ========================\n\n");
+	HitCarriageReturnToContinue();
+	IntNos.BubbleSort();
+	IntNos.Display("========================== Sorted =========================\n\n");
+}
 # pragma endregion
 
 # pragma region LISTTYPE_DIAGNOSTIC_LEVEL_9___InsertionSort //=============================================================================
-//if (LISTTYPE_DIAGNOSTIC_LEVEL <= 9)
-//{
-//	puts("\n\n");
-//	puts("===================================================================");
-//	puts("===================================================================");
-//	puts("================        Testing InsertionSort     =================");
-//	puts("================   LISTTYPE_DIAGNOSTIC_LEVEL = 9  =================");
-//	puts("===================================================================");
-//	puts("===================================================================\n");
-//
-//	srand(2320);
-//	ListType <Integer>
-//		IntNos1(8),
-//		IntNos2(500);
-//
-//	IntNos1.HicksRandomAppend(8);
-//	IntNos1.Display("========================= Insertion Sort Unsorted ========================");
-//	IntNos1.InsertionSort();
-//	IntNos1.Display("========================== Insertion Sort Sorted =========================");
-//
-//	IntNos2.HicksRandomAppend(500);
-//	IntNos2.Display("========================= Insertion Sort Unsorted ========================");
-//	IntNos2.InsertionSort();
-//	IntNos2.Display("========================== Insertion Sort Sorted =========================");
-//}
+if (LISTTYPE_DIAGNOSTIC_LEVEL <= 9)
+{
+	puts("\n\n");
+	puts("===================================================================");
+	puts("===================================================================");
+	puts("================        Testing InsertionSort     =================");
+	puts("================   LISTTYPE_DIAGNOSTIC_LEVEL = 9  =================");
+	puts("===================================================================");
+	puts("===================================================================\n");
+
+	srand(2320);
+	ListType <Integer>
+		IntNos1(8),
+		IntNos2(500);
+
+	IntNos1.HicksRandomAppend(8);
+	IntNos1.Display("========================= Insertion Sort Unsorted ========================");
+	IntNos1.InsertionSort();
+	IntNos1.Display("========================== Insertion Sort Sorted =========================");
+
+	IntNos2.HicksRandomAppend(500);
+	IntNos2.Display("========================= Insertion Sort Unsorted ========================");
+	IntNos2.InsertionSort();
+	IntNos2.Display("========================== Insertion Sort Sorted =========================");
+}
 # pragma endregion
 
 # pragma region LISTTYPE_DIAGNOSTIC_LEVEL_10___InsertionSort_Autos //=======================================================================
-//if (LISTTYPE_DIAGNOSTIC_LEVEL <= 10)
-//{
-//	puts("\n\n");
-//	puts("===================================================================");
-//	puts("===================================================================");
-//	puts("================    Testing InsertionSort Autos   =================");
-//	puts("================   LISTTYPE_DIAGNOSTIC_LEVEL = 10  =================");
-//	puts("===================================================================");
-//	puts("===================================================================\n");
-//
-//	srand(2320);
-//	ListType <Auto>
-//		NorthPark(15);
-//	for (long Pos = 1; Pos <= 13; Pos++)
-//		NorthPark.Append(Autos[Pos]);
-//	NorthPark.Display(true, "13 UnSorted Autos");
-//	NorthPark.InsertionSort();
-//	NorthPark.Display(true, "13 Sorted Autos");
-//}
+if (LISTTYPE_DIAGNOSTIC_LEVEL <= 10)
+{
+	puts("\n\n");
+	puts("===================================================================");
+	puts("===================================================================");
+	puts("================    Testing InsertionSort Autos   =================");
+	puts("================   LISTTYPE_DIAGNOSTIC_LEVEL = 10  =================");
+	puts("===================================================================");
+	puts("===================================================================\n");
+
+	srand(2320);
+	ListType <Auto>
+		NorthPark(15);
+	for (long Pos = 1; Pos <= 13; Pos++)
+		NorthPark.Append(Autos[Pos]);
+	NorthPark.Display(true, "13 UnSorted Autos");
+	NorthPark.InsertionSort();
+	NorthPark.Display(true, "13 Sorted Autos");
+}
 # pragma endregion
 
 # pragma region LISTTYPE_DIAGNOSTIC_LEVEL_11___SelectionSort //===========================================================================
 if (LISTTYPE_DIAGNOSTIC_LEVEL <= 11)
-//{
-//	puts("\n\n");
-//	puts("===================================================================");
-//	puts("===================================================================");
-//	puts("================        Testing SelectionSort      ================");
-//	puts("================   LISTTYPE_DIAGNOSTIC_LEVEL = 11  ================");
-//	puts("===================================================================");
-//	puts("===================================================================\n");
-//
-//	srand(2320);
-//	ListType <Integer>
-//		IntNos1(8),
-//		IntNos2(500);
-//
-//	IntNos1.HicksRandomAppend(8);
-//	IntNos1.Display("========================= SelectionSort Sort Unsorted ========================");
-//	IntNos1.SelectionSort();
-//	IntNos1.Display("========================== SelectionSort Sort Sorted =========================");
-//
-//	IntNos2.HicksRandomAppend(500);
-//	IntNos2.Display("========================= SelectionSort Sort Unsorted ========================");
-//	IntNos2.SelectionSort();
-//	IntNos2.Display("========================== SelectionSort Sort Sorted =========================");
-//}
+{
+	puts("\n\n");
+	puts("===================================================================");
+	puts("===================================================================");
+	puts("================        Testing SelectionSort      ================");
+	puts("================   LISTTYPE_DIAGNOSTIC_LEVEL = 11  ================");
+	puts("===================================================================");
+	puts("===================================================================\n");
+
+	srand(2320);
+	ListType <Integer>
+		IntNos1(8),
+		IntNos2(500);
+
+	IntNos1.HicksRandomAppend(8);
+	IntNos1.Display("========================= SelectionSort Sort Unsorted ========================");
+	IntNos1.SelectionSort();
+	IntNos1.Display("========================== SelectionSort Sort Sorted =========================");
+
+	IntNos2.HicksRandomAppend(500);
+	IntNos2.Display("========================= SelectionSort Sort Unsorted ========================");
+	IntNos2.SelectionSort();
+	IntNos2.Display("========================== SelectionSort Sort Sorted =========================");
+}
 # pragma endregion
 
 # pragma region LISTTYPE_DIAGNOSTIC_LEVEL_12___SelectionSort_Students //===================================================================
-//if (LISTTYPE_DIAGNOSTIC_LEVEL <= 12)
-//{
-//	puts("\n\n");
-//	puts("===================================================================");
-//	puts("===================================================================");
-//	puts("================  Testing SelectionSort Students   ================");
-//	puts("================   LISTTYPE_DIAGNOSTIC_LEVEL = 12  ================");
-//	puts("===================================================================");
-//	puts("===================================================================\n");
-//
-//	srand(2320);
-//	ListType <Student>
-//		CSCI_2320(44);
-//	for (long Pos = 1; Pos <= 42; Pos++)
-//		CSCI_2320.Append(Students[Pos]);
-//	CSCI_2320.Display(true, "42 UnSorted Students");
-//	CSCI_2320.SelectionSort();
-//	CSCI_2320.Display(true, "42 Sorted Students");
-//}
+if (LISTTYPE_DIAGNOSTIC_LEVEL <= 12)
+{
+	puts("\n\n");
+	puts("===================================================================");
+	puts("===================================================================");
+	puts("================  Testing SelectionSort Students   ================");
+	puts("================   LISTTYPE_DIAGNOSTIC_LEVEL = 12  ================");
+	puts("===================================================================");
+	puts("===================================================================\n");
+
+	srand(2320);
+	ListType <Student>
+		CSCI_2320(44);
+	for (long Pos = 1; Pos <= 42; Pos++)
+		CSCI_2320.Append(Students[Pos]);
+	CSCI_2320.Display(true, "42 UnSorted Students");
+	CSCI_2320.SelectionSort();
+	CSCI_2320.Display(true, "42 Sorted Students");
+}
 # pragma endregion
 
 # pragma region LISTTYPE_DIAGNOSTIC_LEVEL_13___QuickSort //================================================================================
