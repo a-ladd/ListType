@@ -1,0 +1,7 @@
+﻿1>------ Build started: Project: Project, Configuration: Debug Win32 ------
+1>Utilities.cpp
+1>Main.cpp
+1>Generating Code...
+1>Project.vcxproj -> C:\Temp\Project-2017\Debug\Project.exe
+1>Project.vcxproj -> C:\Temp\Project-2017\Debug\Project.pdb (Partial PDB)
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
